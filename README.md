@@ -4,6 +4,19 @@
  <a href="https://hub.docker.com/r/levaitamas/vobsub2srt" alt="Docker pulls">
   <img src="https://img.shields.io/docker/pulls/levaitamas/vobsub2srt" /></a>
 
+## Supported languages
+- English
+- German
+- French
+- Spanish
+- Portuguese
+- Italian
+- Dutch
+- Danish
+- Polish
+- Czech
+- Russian
+
 ## How to use?
 
 1. Put your subtitles to a folder (*e.g.,* `subs`)

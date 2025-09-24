@@ -18,6 +18,16 @@ FROM alpine:3.22
 
 RUN apk add --no-cache bash wget ca-certificates git cmake make pkgconf g++ tiff-dev tesseract-ocr-dev \
     && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata -O /usr/share/tessdata/eng.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/deu.traineddata -O /usr/share/tessdata/deu.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/fra.traineddata -O /usr/share/tessdata/fra.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/spa.traineddata -O /usr/share/tessdata/spa.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/por.traineddata -O /usr/share/tessdata/por.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/ita.traineddata -O /usr/share/tessdata/ita.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/nld.traineddata -O /usr/share/tessdata/nld.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/dan.traineddata -O /usr/share/tessdata/dan.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/pol.traineddata -O /usr/share/tessdata/pol.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/ces.traineddata -O /usr/share/tessdata/ces.traineddata \
+    && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/rus.traineddata -O /usr/share/tessdata/rus.traineddata \
     && git clone https://github.com/ecdye/VobSub2SRT.git VobSub2SRT \
     && cd VobSub2SRT \
     && git checkout f3205f54448505e56daaf7449fdddc1a4d036d50 \
