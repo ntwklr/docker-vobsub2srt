@@ -30,7 +30,6 @@ RUN apk add --no-cache bash wget ca-certificates git cmake make pkgconf g++ tiff
     && wget https://github.com/tesseract-ocr/tessdata_best/raw/main/rus.traineddata -O /usr/share/tessdata/rus.traineddata \
     && git clone https://github.com/ecdye/VobSub2SRT.git VobSub2SRT \
     && cd VobSub2SRT \
-    && git checkout f3205f54448505e56daaf7449fdddc1a4d036d50 \
     && sed -Ei 's/#include <vector>/#include <vector>\n#include <climits>/' src/vobsub2srt.c++ \
     && ./configure \
     && make -j`nproc` \
